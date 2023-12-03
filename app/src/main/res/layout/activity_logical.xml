@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Logic.LogicalActivity">
+
+   <LinearLayout
+       android:id="@+id/top_line"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       app:layout_constraintTop_toTopOf="parent">
+       <ImageView
+           android:id="@+id/back_image"
+           android:layout_width="54dp"
+           android:layout_height="54dp"
+           android:src="@drawable/ic_back"
+           android:padding="15dp"
+           android:layout_marginLeft="8dp"/>
+
+
+       <TextView
+           android:id="@+id/correct_counter"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:padding="2dp"
+           android:visibility="visible"
+           android:text="0"
+           android:textColor="@color/tema"
+           android:textSize="24sp"
+           android:textStyle="bold" />
+       <ImageView
+
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginTop="8dp"
+           android:visibility="visible"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:srcCompat="@drawable/correctorwrong" />
+       <TextView
+           android:id="@+id/wrong_counter"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:visibility="visible"
+           android:padding="2dp"
+           android:text="0"
+           android:textColor="@color/tema"
+           android:textSize="24sp"
+           android:textStyle="bold" />
+
+
+
+       <Space
+           android:layout_width="54dp"
+           android:layout_height="match_parent"
+           android:layout_marginRight="8dp"/>
+   </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/tekst_sovoli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/ajovobmantiqiy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:cardCornerRadius="10dp"
+            app:cardMaxElevation="4dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="@color/tema"
+            android:elevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintTop_toBottomOf="@id/top_line"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:minHeight="150dp"
+            android:padding="20dp"
+            android:background="@drawable/question_bg"
+            android:text="&quot;Agar kechagi kun ertaga bo'lganida, bugun yakshanba bo'lar edi.&quot; Qaysi kuni aytilgan gap?"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+    <Button
+        android:id="@+id/ajovobmantiqiy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/background_for_mantiqiy_button"
+        android:foreground="?android:selectableItemBackground"
+        android:minHeight="70dip"
+        android:text="Dushanba"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/tema"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/bjovobmantiqiy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bjovobmantiqiy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:minHeight="70dp"
+        android:background="@drawable/background_for_mantiqiy_button"
+        android:text="seshanba"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/tema"
+        app:cornerRadius="20dp"
+        android:foreground="?android:selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/cjovobmantiqiy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp"/>
+
+    <Button
+        android:id="@+id/cjovobmantiqiy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:minHeight="62dip"
+        android:text="shanba"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/background_for_mantiqiy_button"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/tema"
+        app:cornerRadius="20dp"
+        android:foreground="?android:selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/djovobmantiqiy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/djovobmantiqiy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+        android:minHeight="62dip"
+        android:text="yakshanba"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/background_for_mantiqiy_button"
+        android:textSize="12sp"
+        android:foreground="?android:selectableItemBackground"
+        android:textStyle="bold"
+        app:backgroundTint="@color/tema"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
